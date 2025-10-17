@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Museum Arts of Cebu</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fffaf3;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #964B00;
+            color: white;
+            text-align: center;
+            padding: 1.2em 0;
+        }
+
+        nav {
+            background-color: #013220;
+            padding: 0.8em;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1em;
+            font-weight: 600;
+        }
+
+        nav a:hover {
+            color: #FFDE21;
+        }
+
+        .contact-container {
+            max-width: 900px;
+            margin: 2em auto;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            padding: 2em;
+        }
+
+        h2 {
+            text-align: center;
+            color: #013220;
+            margin-bottom: 1em;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5em;
+        }
+
+        .person {
+            background-color: #f9f5eb;
+            border-radius: 10px;
+            padding: 1.5em;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .person:hover {
+            transform: scale(1.03);
+        }
+
+        .person h3 {
+            color: #964B00;
+            margin-bottom: 0.5em;
+        }
+
+        .person p {
+            color: #333;
+        }
+
+        form {
+            margin-top: 2em;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.3em;
+            font-weight: 600;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.8em;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            margin-bottom: 1em;
+            font-family: inherit;
+        }
+
+        button {
+            background-color: #013220;
+            color: white;
+            padding: 0.8em 1.5em;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #964B00;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #013220;
+            color: white;
+            padding: 1em 0;
+            margin-top: 3em;
+        }
+
+        @media (max-width: 768px) {
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Museum Arts of Cebu</h1>
+        <p>Connecting Culture, History, and People</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="contact-container">
+        <h2>Contact Us</h2>
+
+        <div class="contact-info">
+            <div class="person">
+                <h3>Jaf Marl Montes Managaytay</h3>
+                <p>Art Stand Coordinator</p>
+                <p>📧 jafmarl.managaytay@gmail.com</p>
+                <p>📞 +63 123 456 7890</p>
+            </div>
+            <div class="person">
+                <h3>Art Steaven Geonzon Obado</h3>
+                <p>Art Director </p>
+                <p>📧 artsteaven.obado@gmail.com</p>
+              
+            </div>
+        </div>
+
+        <form>
+            <h2>Send Us a Message</h2>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Museum Arts of Cebu | Designed by Jaf Marl Montes Managaytay & Art Steaven Geonzon Obado</p>
+    </footer>
+</body>
+</html>
